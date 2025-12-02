@@ -20,6 +20,7 @@ drf-spectacular-sidecar==2025.6.1
 Flask==3.1.1
 frozenlist==1.7.0
 googletrans==4.0.2
+gunicorn==23.0.0
 h11==0.16.0
 h2==4.2.0
 hpack==4.1.0
@@ -37,6 +38,7 @@ langdetect==1.0.9
 MarkupSafe==3.0.2
 multidict==6.6.3
 openai==0.28.0
+packaging==25.0
 passlib==1.7.4
 propcache==0.3.2
 pycryptodome==3.23.0
