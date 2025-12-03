@@ -96,10 +96,10 @@ WSGI_APPLICATION = 'root.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'easypost',
-        'USER': 'postgres',
-        'PASSWORD': '1',
-        'HOST': 'localhost',
+        'NAME': 'lugat_ai',
+        'USER': 'user',
+        'PASSWORD': 'xDrS9GFJgiJ4SskADhBg2AbutDznc7Ho',
+        'HOST': 'xDrS9GFJgiJ4SskADhBg2AbutDznc7Ho',
         'PORT': '5432',
     }
 }
