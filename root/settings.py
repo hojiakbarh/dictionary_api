@@ -96,13 +96,17 @@ WSGI_APPLICATION = 'root.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
+        'NAME': 'lugat_ai',
         'USER': 'user',
         'PASSWORD': 'xDrS9GFJgiJ4SskADhBg2AbutDznc7Ho',
         'HOST': 'dpg-d4nufcre5dus738i7h20-a.abcdefg.render.com',
         'PORT': '5432',
+        'OPTIONS': {
+            'sslmode': 'require',
+        },
     }
 }
+
 
 
 
