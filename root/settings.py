@@ -99,10 +99,12 @@ DATABASES = {
         'NAME': 'lugat_ai',
         'USER': 'user',
         'PASSWORD': 'xDrS9GFJgiJ4SskADhBg2AbutDznc7Ho',
-        'HOST': 'dpg-d4nufcre5dus738i7h20-a',
+        'HOST': 'dpg-d4nufcre5dus738i7h20-a.abcdefg.render.com',
         'PORT': '5432',
     }
 }
+
+
 
 
 
