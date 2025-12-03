@@ -99,7 +99,7 @@ DATABASES = {
         'NAME': 'lugat_ai',
         'USER': 'user',
         'PASSWORD': 'xDrS9GFJgiJ4SskADhBg2AbutDznc7Ho',
-        'HOST': 'xDrS9GFJgiJ4SskADhBg2AbutDznc7Ho',
+        'HOST': 'dpg-d4nufcre5dus738i7h20-a',
         'PORT': '5432',
     }
 }
