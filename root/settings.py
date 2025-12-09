@@ -12,7 +12,9 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 from datetime import timedelta
 from os.path import join
 from pathlib import Path
-
+import os
+import dj_database_url
+from decouple import config
 from django.conf import settings
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -60,6 +62,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'root.urls'
@@ -94,17 +97,7 @@ WSGI_APPLICATION = 'root.wsgi.application'
 # }
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'lugat_ai',
-        'USER': 'user',
-        'PASSWORD': 'xDrS9GFJgiJ4SskADhBg2AbutDznc7Ho',
-        'HOST': '10.25.90.69',  # Render dashboard-dan oling
-        'PORT': '5432',
-        'OPTIONS': {
-            'sslmode': 'require',
-        },
-    }
+    'default': dj_database_url.parse(config('DATABASE_URL'))
 }
 
 
